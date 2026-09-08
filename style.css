@@ -1,0 +1,94 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* Navigation Header Style using Flexbox */
+.main-header {
+    background-color: #1e3a8a; /* Deep institutional blue */
+    color: #ffffff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo-area h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.logo-area p {
+    font-size: 0.9rem;
+    color: #93c5fd;
+    font-style: italic;
+}
+
+.navigation-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navigation-menu a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    padding-bottom: 5px;
+}
+
+.navigation-menu a:hover, .navigation-menu a.active-link {
+    color: #ffffff;
+    border-bottom: 3px solid #3b82f6;
+}
+
+/* Layout Container Content */
+.homepage-container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.hero-banner {
+    background: #ffffff;
+    padding: 60px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border-left: 6px solid #1e3a8a;
+}
+
+.hero-banner h2 {
+    font-size: 2.2rem;
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+.hero-banner p {
+    color: #475569;
+    font-size: 1.1rem;
+    max-width: 800px;
+}
+
+/* Page Footer Element */
+.main-footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 25px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.85rem;
+}
