@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions Portal | Njumbi High School Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Global Navigation Header Menu (Matches previous pages for visual consistency) -->
+    <header class="main-header">
+        <div class="logo-area">
+            <h1>Njumbi High School</h1>
+            <p>Strive for Excellence</p>
+        </div>
+        <nav class="navigation-menu" aria-label="Main Website Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About School</a></li>
+                <li><a href="admissions.html" class="active-link">Admissions Portal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Registration and Fees Workspace -->
+    <main class="homepage-container">
+        
+        <!-- Registration Intake Form Component -->
+        <article class="hero-banner" style="margin-bottom: 40px; border-left-color: #2ecc71;">
+            <h2>Student Application Intake Form</h2>
+            <p style="margin-bottom: 25px;">Prospective parents and guardians can fill out the preliminary enrollment registration metrics below to submit an application query.</p>
+            
+            <!-- Frontend Form Connected via Standard Inputs -->
+            <form action="https://formspree.io" method="POST" style="display: flex; flex-direction: column; gap: 20px; max-width: 600px;">
+                
+                <div>
+                    <label for="student-name" style="display: block; margin-bottom: 5px; font-weight: 600; color: #1e3a8a;">Full Student Name:</label>
+                    <input type="text" id="student-name" name="student_name" placeholder="Enter first, middle, and surname" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-family: inherit;" required>
+                </div>
+
+                <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                    <div style="flex: 1; min-width: 250px;">
+                        <label for="entry-class" style="display: block; margin-bottom: 5px; font-weight: 600; color: #1e3a8a;">Target Entry Class:</label>
+                        <select id="entry-class" name="entry_class" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-family: inherit;">
+                            <option value="form-1">Form One Enrollment</option>
+                            <option value="form-2">Form Two Transfer</option>
+                            <option value="form-3">Form Three Transfer</option>
+                        </select>
+                    </div>
+                    <div style="flex: 1; min-width: 250px;">
+                        <label for="parent-phone" style="display: block; margin-bottom: 5px; font-weight: 600; color: #1e3a8a;">Parent/Guardian Contact Number:</label>
+                        <input type="tel" id="parent-phone" name="parent_phone" placeholder="e.g., 0712345678" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-family: inherit;" required>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="extra-notes" style="display: block; margin-bottom: 5px; font-weight: 600; color: #1e3a8a;">Auxiliary Academic/Sporting Notes:</label>
+                    <textarea id="extra-notes" name="extra_notes" rows="4" placeholder="Detail any previous academic milestones, talents, or transferring institution details..." style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-family: inherit; resize: vertical;"></textarea>
+                </div>
+
+                <button type="submit" style="background-color: #1e3a8a; color: #ffffff; border: none; padding: 12px 20px; border-radius: 6px; font-weight: 700; cursor: pointer; transition: background-color 0.3s; max-width: 200px;">
+                    Submit Application
+                </button>
+
+            </form>
+        </article>
+
+    </main>
+
+    <!-- Institutional Layout Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2026 Njumbi High School. Built Live via Multi-Page Clean Architecture.</p>
+    </footer>
+
+</body>
+</html>
